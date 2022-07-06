@@ -1,0 +1,114 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #EE4D2D;
+
+
+
+    --header-height: 120px;
+    --navbar-height: 42px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 40px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    line-height: 1.6rem;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+
+}
+
+/* Button */        
+.btn{
+    min-width:124px;
+    height:40px;
+    text-decoration: none;
+    border: none;
+    border-radius:2px;
+    font-size:1.5rem;
+    padding:0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: #fff;
+}
+
+.btn-category{
+    min-width:190px;
+    height:30px;
+    text-decoration: none;
+    border: none;
+    border-radius:2px;
+    font-size:1.5rem;
+    padding:0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: #fff;
+}
+
+.btn-filter{
+    min-width:90px;
+    height:34px;
+    text-decoration: none;
+    border: none;
+    border-radius:2px;
+    font-size:1.5rem;
+    padding:0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: #fff;
+}
+
+.btn-filter-primary{
+    min-width:90px;
+    height:34px;
+    text-decoration: none;
+    border: none;
+    border-radius:2px;
+    font-size:1.5rem;
+    padding:0 12px;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-primary--disable{
+    color: var(--white-color);
+    background-color: #f3836c;
+}
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to  {
+        opacity: 1;
+    }
+}
