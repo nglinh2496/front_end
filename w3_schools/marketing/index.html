@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="nav">
+            <div class="grid">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#plans" class="nav__link">Plans</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <div class="grid wide">
+                <div class="header__panel">
+                    <div class="header__logo">
+                        MARKETING
+                    </div>
+                    <p>Template by w3.css</p>
+                </div>
+                <!-- Slide -->
+                <div class="header__slide">
+                    <div class="header__banner">
+                        <img id = "header__img" src="./asset/img/coffee.jpg" alt="coffee">
+                        <!-- <div id = "header__title">abc</div> -->
+                    </div>
+                    <div class="header__btn">
+                        <i class="header__arrow fa-solid fa-circle-arrow-left" onclick="prev()"></i>
+                        <div class="header__push">
+                            <div class="header__push-icon"></div>
+                            <div class="header__push-icon"></div>
+                            <div class="header__push-icon"></div>
+                        </div>
+                        <i class="header__arrow fa-solid fa-circle-arrow-right" onclick="next()"></i>
+                    </div>
+                </div>
+                <!-- Script Slide -->
+                <script>
+                    var index = 1;
+                    changeImage = function(){
+                        var imgs = [
+                            "./asset/css/img/team1.jpg",
+                            "./asset/css/img/coffee.jpg",
+                            "./asset/css/img/sound.jpg"  
+                        ];
+                        
+                    }
+
+                    function prev(){
+                        index++;
+                        if(index>=imgs.length)index = 1;
+                        var img = document.getElementById('header__img');
+                        img.src = imgs[index];
+                        document.getElementById('')
+
+                    }
+
+                    function next(){
+                        
+
+                    }
+
+
+
+                </script>
+
+                <!-- Offer -->
+                <div class="offer">
+                    <div class="offer__heading">
+                        <h3>
+                            What We Offer
+                        </h3>
+                    </div>  
+                    <div class="row">
+                        <div class="c-3 m-12">
+                            <div class="offer__container">
+                                <div class="offer__label">Design</div>
+                                <div class="offer__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                            </div>
+                        </div>
+                        <div class="c-3 m-12">
+                            <div class="offer__container">
+                                <div class="offer__label">Branding</div>
+                                <div class="offer__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                            </div>
+                        </div>
+                        <div class="c-3 m-12">
+                            <div class="offer__container">
+                                <div class="offer__label">Consultation</div>
+                                <div class="offer__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                            </div>
+                        </div>
+                        <div class="c-3 m-12">
+                            <div class="offer__container">
+                                <div class="offer__label">Promises</div>
+                                <div class="offer__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plans -->
+                <div id="plans">
+                    <div class="plans__heading">
+                        <h3>
+                            Pricing Plans
+                        </h3>
+                        <span>Choose a pricing plan that fits your needs.</span>
+                    </div>
+                    <div class="row">
+                        <div class="c-4 m-12">
+                            <ul class="plans__list">
+                                <li class="plans__item plans__item-first">
+                                    <div class="plans__label">
+                                        Basic
+                                    </div>
+                                </li>
+                                <li class="plans__item">
+                                    <span>10GB</span>
+                                    Storage
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Emails
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Domains
+                                </li>
+                                <li class="plans__item">
+                                    <span>Endless</span>
+                                    Support
+                                </li>
+                                <li class="plans__item">
+                                    <div class="plans__item-price">$ 10</div>
+                                    <div class="plans__item-quantity">per month</div>
+                                </li>
+                                <li class="plans__item plans__item-last">
+                                    <button class = "plans__btn">Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="c-4 m-12">
+                            <ul class="plans__list">
+                                <li class="plans__item plans__item-first">
+                                    <div class="plans__label">
+                                        Basic
+                                    </div>
+                                </li>
+                                <li class="plans__item">
+                                    <span>10GB</span>
+                                    Storage
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Emails
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Domains
+                                </li>
+                                <li class="plans__item">
+                                    <span>Endless</span>
+                                    Support
+                                </li>
+                                <li class="plans__item">
+                                    <div class="plans__item-price">$ 10</div>
+                                    <div class="plans__item-quantity">per month</div>
+                                </li>
+                                <li class="plans__item plans__item-last">
+                                    <button class = "plans__btn">Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="c-4 m-12">
+                            <ul class="plans__list">
+                                <li class="plans__item plans__item-first">
+                                    <div class="plans__label">
+                                        Basic
+                                    </div>
+                                </li>
+                                <li class="plans__item">
+                                    <span>10GB</span>
+                                    Storage
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Emails
+                                </li>
+                                <li class="plans__item">
+                                    <span>10</span>
+                                    Domains
+                                </li>
+                                <li class="plans__item">
+                                    <span>Endless</span>
+                                    Support
+                                </li>
+                                <li class="plans__item">
+                                    <div class="plans__item-price">$ 10</div>
+                                    <div class="plans__item-quantity">per month</div>
+                                </li>
+                                <li class="plans__item plans__item-last">
+                                    <button class = "plans__btn">Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- About -->
+                <div id="about">
+                    <div class="offer__heading">
+                        <h3>
+                            Who We Are
+                        </h3>
+                    </div> 
+                    <div class="row">
+                        <div class="c-4 m-12">
+                            <div class="about__wrap">
+                                <div class="about__img">
+                                    <img src="./asset/img/team1.jpg" alt="" class="about__img-link">
+                                </div>
+                                <div class="about__info">
+                                    <div class="about__name">Jane Doe</div>
+                                    <div class="about__position">CEO & Founder</div>
+                                    <div class="about__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                                    <button class="about__btn-btn">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-4 m-12">
+                            <div class="about__wrap">
+                                <div class="about__img">
+                                    <img src="./asset/img/team1.jpg" alt="" class="about__img-link">
+                                </div>
+                                <div class="about__info">
+                                    <div class="about__name">Jane Doe</div>
+                                    <div class="about__position">CEO & Founder</div>
+                                    <div class="about__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                                    <button class="about__btn-btn">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-4 m-12">
+                            <div class="about__wrap">
+                                <div class="about__img">
+                                    <img src="./asset/img/team1.jpg" alt="" class="about__img-link">
+                                </div>
+                                <div class="about__info">
+                                    <div class="about__name">Jane Doe</div>
+                                    <div class="about__position">CEO & Founder</div>
+                                    <div class="about__des">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</div>
+                                    <button class="about__btn-btn">Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+                <!-- Contact  -->
+                <div id = "contact">
+                    <div class="offer__heading">
+                        <h3>
+                            Contact Us
+                        </h3>
+                    </div>
+                    <div class="contact__form">
+                        <div class="contact__item">
+                            <label class="contact__label" for="">Name</label>
+                            <input class="contact__input"></input>
+                        </div>
+                        <div class="contact__item">
+                            <label class="contact__label" for="">Email</label>
+                            <input class="contact__input"></input>
+                        </div>
+                        <div class="contact__item">
+                            <label class="contact__label" for="">Subject</label>
+                            <input class="contact__input"></input>
+                        </div>
+                        <div class="contact__item">
+                            <label class="contact__label" for="">Message</label>
+                            <input class="contact__input"></input>
+                        </div>
+                        <button class="contact__send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class = "footer">
+            <div class="plans__heading">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+            <div class="footer__push">
+                <a href="#" id = "footer__push-link">
+                    <i class="footer__push-icon fa-solid fa-arrow-up"></i>
+                    To the top
+                </a>
+            </div>
+            <div class="footer__socials">
+                <i class="footer__icon fa-brands fa-facebook-square"></i>
+                <i class="footer__icon fa-brands fa-instagram"></i>
+                <i class="footer__icon fa-brands fa-snapchat-square"></i>
+                <i class="footer__icon fa-brands fa-pinterest-p"></i>
+                <i class="footer__icon fa-brands fa-twitter"></i>
+                <i class="footer__icon fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="footer__about">
+                Powered by <a href="">w3.css</a>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

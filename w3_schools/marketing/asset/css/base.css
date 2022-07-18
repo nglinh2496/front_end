@@ -1,0 +1,45 @@
+html{
+    font-family: "Lato",sans-serif;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*{  
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.grid{
+    display: block;
+    max-width: 100%;
+    padding: 0;
+}
+
+.grid.wide{
+    max-width: 968px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.c-4{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+@media (max-width: 46.1875em){
+    .m-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+

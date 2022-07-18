@@ -1,0 +1,17 @@
+html{
+    font-size: 62.5%;
+    font-family: "UTM Avo","OpenSansRegular","Arial";
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+/* button */
+
+.btn{
+    border: none;
+}

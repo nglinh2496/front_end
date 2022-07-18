@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/1ae9b9868bd3121e932225b140a839a5?family=Verdana" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./asset/css/fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./asset/css/fonts/themify-icons-font/themify-icons/themify-icons.css">
+
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="nav">
+                <!-- nav PC -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                       <a href="#" class="nav__link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#band" class="nav__link">BAND</a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="#date__wrap" class="nav__link">TOUR</a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="#contact__wrap" class="nav__link">CONTACT</a>
+                     </li>
+                     <li class="nav__item nav__link-hidden">
+                        <a href="" class="nav__link ">
+                            MORE
+                            <div class="nav__icon">
+                                <i class="nav__icon-down fa-solid fa-sort-down"></i>
+                            </div>
+                        </a>
+
+                        <ul class="nav__choice-list">
+                            <li class="nav__choice-item">
+                                <a href="" class="nav__choice-link">Merchandise</a>
+                            </li>
+                            <li class="nav__choice-item">
+                                <a href="" class="nav__choice-link">Extras</a>
+                            </li>
+                            <li class="nav__choice-item">
+                                <a href="" class="nav__choice-link">Media</a>
+                            </li>
+                        </ul>
+                     </li>
+                </ul>
+                 <!-- nav Mobile -->
+                 <label for="nav__mobile-input" class="nav__bars">
+                    <i class="nav__bars-icon fa-solid fa-bars"></i>
+                </label> 
+                <input hidden type="checkbox" class = "nav__input" id = "nav__mobile-input">
+                <label for="nav__mobile-input" class="nav__overlay"></label>
+                <div class="nav__mobile">
+                    <!-- Mobile User -->
+                    <div class="nav__mobile-user">
+                        <div class="nav__mobile-user--img">
+                            <img src="./asset/css/img/chicago.jpg" alt="" class="nav__mobile-user--img-link">
+                        </div>
+                        <div class="nav__mobile-user--info">
+                            <div class="nav__mobile-user--name">
+                                Nguyễn Linh
+                            </div>
+                            <div class="nav__mobile-user--coin">1.600 Coins</div>
+                        </div>
+                        <label for="nav__mobile-input" class="nav__mobile-user--close">
+                            <i class="nav__mobile-user--close-icon fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                    <!-- Mobile List -->
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <a href = "#" class="nav__mobile-link">HOME</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href = "" class="nav__mobile-link">BAND</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href = "" class="nav__mobile-link">TOUR</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href = "" class="nav__mobile-link">CONTACT</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href = "" class="nav__mobile-link">MERCH</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="nav__icon-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <!-- Slide Banner -->
+            <div class="banner">
+                <img id = "banner__img" src="./asset/css/img/chicago.jpg" alt="">
+                <div class="" id = "banner__heading"></div>
+                <div id = "banner__content"></div>
+            </div>
+        </div>
+            <!-- JS Slide -->
+            <script>
+                var index = 1;   
+                changeImage = function(){
+                    var imgs = [
+                        "./asset/css/img/chicago.jpg",
+                        "./asset/css/img/la.jpg",
+                        "./asset/css/img/ny.jpg"
+                    ];
+                    var headings = [
+                        "Chicago",
+                        "Los Angeles",
+                        "New York"
+                    ];
+                    var contents = [
+                        "Thank you, Chicago - A night we won't forget.",
+                        "We had the best time playing at Venice Beach!",
+                        "The atmosphere in New York is lorem ipsum."
+                    ];
+
+                    document.getElementById('banner__img').src = imgs[index];
+                    document.getElementById('banner__heading').innerHTML = headings[index];
+                    document.getElementById('banner__content').innerHTML = contents[index];
+                    index++;
+                    if(index == 3){
+                        index = 0;
+                    } 
+                };
+                setInterval( changeImage, 3000 );
+            </script>
+        <!-- Container -->
+        <div class="container">
+            <div class="grid wide">
+                <!-- The Band -->
+                <div id = "band">
+                    <div class="band__content">
+                        <div class="band__heading">
+                            THE BAND
+                        </div>
+                        <div class="band__label">
+                            We love music
+                        </div>
+                        <div class="band__des">
+                            We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+    
+                    <div class="third">
+                        <div class="row">
+                            <div class="c-4 l-12">
+                                <div class="third__info">
+                                    <div class="third__name">
+                                        Name
+                                    </div>
+                                    <img src="./asset/css/img/bandmember.jpg" alt="" class="third__img">
+                                </div>
+                            </div>
+                            <div class="c-4 l-12">
+                                <div class="third__info">
+                                    <div class="third__name">
+                                        Name
+                                    </div>
+                                    <img src="./asset/css/img/bandmember.jpg" alt="" class="third__img">
+                                </div>
+                            </div>
+                            <div class="c-4 l-12">
+                                <div class="third__info">
+                                    <div class="third__name">
+                                        Name
+                                    </div>
+                                    <img src="./asset/css/img/bandmember.jpg" alt="" class="third__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour Date -->
+            <div class="date">
+                <div class="grid wide">
+                    <div id = "date__wrap">
+                        <div class="date__content">
+                            <div class="date__heading">
+                                TOUR DATES
+                            </div>
+                            <div class="date__label">
+                                Remember to book your tickets!
+                            </div>
+                        </div>        
+                        <ul class="ticket__list">
+                            <li class="ticket__item">
+                                <div class="ticket__time">September</div>
+                                <div class="ticket__sold">
+                                    Sold out
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <div class="ticket__time">September</div>
+                                <div class="ticket__sold">
+                                    Sold out
+                                </div>
+                            </li>
+                            <li class="ticket__item">
+                                <div class="ticket__time">September</div>
+                                <div class="ticket__number">
+                                    3
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="place">
+                            <div class="row">
+                                <div class="c-4 l-12">
+                                    <div class="place__wrap">
+                                        <img class = "place__img" src="./asset/css/img/newyork.jpg" alt="">
+                                        <div class="place__info">
+                                            <div class="place__name">New York</div>
+                                            <div class="place__date">Fri 27 Nov 2016</div>
+                                            <div class="place__des">Praesent tincidunt sed tellus ut rutrum sed vitae justo</div>
+                                            <button class="buy__btn">Buy Tickets</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-4 l-12">
+                                    <div class="place__wrap">
+                                        <img class = "place__img" src="./asset/css/img/newyork.jpg" alt="">
+                                        <div class="place__info">
+                                            <div class="place__name">New York</div>
+                                            <div class="place__date">Fri 27 Nov 2016</div>
+                                            <div class="place__des">Praesent tincidunt sed tellus ut rutrum sed vitae justo</div>
+                                            <button class="buy__btn">Buy Tickets</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c-4 l-12">
+                                    <div class="place__wrap">
+                                        <img class = "place__img" src="./asset/css/img/newyork.jpg" alt="">
+                                        <div class="place__info">
+                                            <div class="place__name">New York</div>
+                                            <div class="place__date">Fri 27 Nov 2016</div>
+                                            <div class="place__des">Praesent tincidunt sed tellus ut rutrum sed vitae justo</div>
+                                            <button class="buy__btn">Buy Tickets</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="contact">
+                <div class="grid wide">
+                    <div id="contact__wrap">
+                        <div class="contact__heading">
+                            CONTACT
+                        </div>
+                        <div class="contact__label">
+                            Fan? Drop a note!
+                        </div> 
+                        <div class="row">
+                            <div class="contact__form">
+                                <div class="c-6 l-12">
+                                    <ul class="contact__list">
+                                        <li class="contact__item">
+                                            <i class="contact__icon contact__icon-address fa-solid fa-location-dot"></i>
+                                            <div class="contact__title">Chicago, US</div>
+                                        </li>
+                                        <li class="contact__item">
+                                            <i class="contact__icon fa-solid fa-phone"></i>
+                                            <div class="contact__title">Phone: +00 151515</div>
+                                        </li>
+                                        <li class="contact__item">
+                                            <i class="contact__icon fa-solid fa-envelope"></i>
+                                            <div class="contact__title">Email: mail@mail.com</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="c-6 l-12">
+                                    <div class="row">
+                                        <div class="input__top">
+                                            <input type="text" class="input__top-2" placeholder="Name">
+                                            <input type="mail"  class="input__top-2" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <input type="text" class="input__bottom" placeholder="Message">
+                                    <button class ="send__btn">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <img src="./asset/css/img/map.jpg" alt="" class="footer__img">
+            <div class="footer__socials">
+                <i class="footer__icon fa-brands fa-facebook-square"></i>
+                <i class="footer__icon fa-brands fa-instagram"></i>
+                <i class="footer__icon fa-brands fa-snapchat-square"></i>
+                <i class="footer__icon fa-brands fa-pinterest-p"></i>
+                <i class="footer__icon fa-brands fa-twitter"></i>
+                <i class="footer__icon fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="footer__about">
+                Powered by <a href="">w3.css</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

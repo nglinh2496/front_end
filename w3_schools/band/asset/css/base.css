@@ -1,0 +1,44 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.grid.wide{
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-4{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.c-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 46.1875em){
+    .l-12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}
